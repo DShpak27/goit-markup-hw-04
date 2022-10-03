@@ -128,10 +128,6 @@ footer {
     margin-right: 50px;
 }
 
-.header-contacts__list {
-    display: flex;
-}
-
 .nav-site__link {
     display: block;
 
@@ -151,11 +147,13 @@ footer {
 
 /* .header-contacts__list является 3-им-последним flex элементом -->".container.flex--model" */
 .header-contacts__list {
+    display: flex;
     margin-left: auto;
 }
 
 .header-contacts__link {
     display: flex;
+    align-items: center;
 
     padding-top: 32px;
     padding-bottom: 32px;
@@ -183,9 +181,7 @@ footer {
 .hero.section {
     margin: 0;
     padding: 0;
-}
 
-.hero__background {
     max-width: 1600px;
     height: 600px;
 
@@ -229,6 +225,7 @@ footer {
 
     background-color: var(--accent-color);
     color: var(--light-txtcolor);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
 
@@ -424,10 +421,10 @@ footer {
     color: #AFB1B8;
 }
 
-.clients__link:hover {
+.clients__link:hover,
+.clients__link:focus {
     border: 1px solid var(--accent-color);
 
-    color: var(--accent-color);
 }
 
 .clients__icon {
@@ -485,10 +482,10 @@ footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer__social-network-link:hover {
+.footer__social-network-link:hover,
+.footer__social-network-link:focus {
     color: var(--light-txtcolor);
     background-color: var(--accent-color);
-
 }
 
 .footer__social-network-icon {
